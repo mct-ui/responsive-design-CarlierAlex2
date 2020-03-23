@@ -1,6 +1,26 @@
 /*------------------------------------*\
   #FONTS
 \*------------------------------------*/
+@font-face{
+    font-family: "HK Grotesk Web";
+    font-weight: 200;
+    src: url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2"),
+        url("../fonts/hkgrotesk-light-webfont.woff") format("woff"),
+}
+
+@font-face{
+    font-family: "HK Grotesk Web";
+    font-weight: 400;
+    src: url("../fonts/hkgrotesk-regular-webfont.woff2") format("woff2"),
+        url("../fonts/hkgrotesk-regular-webfont.woff") format("woff"),
+}
+
+@font-face{
+    font-family: "HK Grotesk Web";
+    font-weight: 600;
+    src: url("../fonts/hkgrotesk-medium-webfont.woff2") format("woff2"),
+        url("../fonts/hkgrotesk-medium-webfont.woff") format("woff"),
+}
 
 /*------------------------------------*\
   #GENERIC
@@ -20,6 +40,16 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    color: #202024;
+    font-family: "HK Grotesk Web";
+}
+
+@media (min-width: 768px) {
+    html{
+        font-size: 20px;
+        line-height: 1.6;
+    }
 }
 
 *,
@@ -36,7 +66,7 @@ html {
  */
 
 ::selection {
-    background: #e85e00;
+    background: #5051DB;
     color: white;
     text-shadow: none;
 }
@@ -62,10 +92,16 @@ img {
     Default markup for typographic elements
 */
 
+h1, h2, h3 {
+    font-weight: 200;
+}
+
 h1 {
     font-size: 36px;
     line-height: 48px;
     margin: 0 0 24px;
+
+    color: #5051DB;
 }
 
 h2 {
@@ -138,16 +174,17 @@ hr {
 a {
     color: RoyalBlue;
     transition: all .1s ease-in-out;
+    color: #5051DB;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color: #3E3EA8;;
 }
 
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #3E3EA8;;
 }
 
 /*------------------------------------*\
@@ -194,7 +231,8 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 90em; /* 90 * 16px = 1440px */
+    /*max-width: 90em; /* 90 * 16px = 1440px */
+    max-width: 70.5em;
 }
 
 /*
