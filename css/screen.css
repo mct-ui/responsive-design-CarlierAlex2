@@ -226,6 +226,10 @@ a:focus {
     }
 }
 
+.o-row—neutral-x-light{
+    background-color: #f7f7f7;
+}
+
 /*
     Objects: Container
     ---
@@ -237,7 +241,7 @@ a:focus {
     margin-right: auto;
     width: 100%;
     /*max-width: 90em; /* 90 * 16px = 1440px */
-    max-width: 70.5em;
+    max-width: 56.4em;
 }
 
 /*
